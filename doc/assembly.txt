@@ -1,0 +1,28 @@
+*assembly.txt*    
+
+
+Introdução à Programação em Assembly x86 (16 bits)~
+
+CPU Intel 8086
+
+
+--------------------------------------------------------------------
+TABLE OF CONTENTS                         *assembly-table-of-contents*
+
+    1. Introdução................................|assembly-introducao| 
+
+
+====================================================================
+INTRODUÇÃO                                       *assembly-introducao*
+
+* Nosso estudo se dará baseado na consagrada arquitetura 'original'
+  desenvolvida pela Intel, denominada x86
+* Por que 'original'?
+  - Arquitetura 16 bits (Original)
+    - 8086 até 80286
+  - Arquitetura 32 bits (Extendida) [x86]
+    - 80386 até Pentium 4
+  - Arquitetura 64 bits (Long mode) [x64]
+    - Pentium 4/Athlon 64 até hoje
+
+vim:tw=60:ts=8:ft=help:norl:

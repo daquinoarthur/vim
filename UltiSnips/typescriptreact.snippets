@@ -1,0 +1,69 @@
+priority 1
+
+snippet rfc "React Function Component"
+const ${1:ComponentName} = () => {
+  return (
+    <div>
+      $0
+    </div>
+  );
+};
+
+export default $1;
+endsnippet
+
+snippet rafce "React Arrow Function Component Export"
+const ${1:${VISUAL:ComponentName}} = () => {
+  return (
+    <div>
+      $0
+    </div>
+  );
+};
+
+export default $1;
+endsnippet
+
+snippet rfcp "React Function Component with Props"
+interface ${1:ComponentName}Props {
+  $2
+}
+
+const $1: React.FC<$1Props> = ({ $3 }) => {
+  return (
+    <div>
+      $0
+    </div>
+  );
+};
+
+export default $1;
+endsnippet
+
+snippet us "useState Hook"
+const [${1:state}, set${1/\w+\s*/\u$0/}] = useState<${2:string}>($3);
+endsnippet
+
+snippet ue "useEffect Hook" 
+useEffect(() => {
+  $1
+}, [$2]);
+endsnippet
+
+snippet uec "useEffect with cleanup"
+useEffect(() => {
+  $1
+  
+  return () => {
+    $2
+  };
+}, [$3]);
+endsnippet
+
+snippet imr "Import React"
+import React from 'react';
+endsnippet
+
+snippet imrh "Import React with hooks"
+import React, { ${1:useState} } from 'react';
+endsnippet

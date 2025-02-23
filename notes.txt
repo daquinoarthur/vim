@@ -1,0 +1,3 @@
+Fix for nerdtree-project-plugin
+
+command! -nargs=0 -complete=customlist,NERDTreeCompleteProjectNames NERDTreeProjectLoadFromCWD call g:NERDTreeProject.LoadFromCWD()
